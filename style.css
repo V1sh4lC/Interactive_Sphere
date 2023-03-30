@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: Quicksand;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  /* border-bottom: 1px solid white; */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3vw;
+  font-size: 0.8rem;
+}
+
+nav ul li {
+  width: 60px;
+  text-align: center;
+  padding: 0.1rem 0;
+  border-radius: 15px;
+  transition: background-color 200ms;
+}
+
+nav ul li:hover {
+  background-color: #fff;
+  color: black;
+
+}
+
+.footer {
+  color: white;
+  position: absolute;
+  /* border: 1px solid white; */
+  width: 100%;
+  font-size: 0.8rem;
+  margin-bottom: 5vh;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  opacity: 0.2;
+  transition: opacity 200ms;
+}
+
+.footer:hover {
+  opacity: 1;
+}
+
+.footer::selection {
+  background-color: #fff;
+  color: black;
+}
